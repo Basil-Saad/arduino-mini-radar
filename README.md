@@ -107,3 +107,19 @@ The block diagram illustrates the overall architecture of the Arduino Mini Radar
 - **Buzzer** generates audible alerts when objects are detected within predefined warning distances.
 
 Together, these components create a simple real-time obstacle detection system capable of continuously scanning its surroundings and notifying the user of nearby objects.
+
+## Circuit Diagram
+
+<p align="center">
+  <img src="images/circuit-diagram.jpg" alt="Circuit Diagram" width="700">
+</p>
+
+The circuit diagram shows the electrical connections between the Arduino UNO and all peripheral components used in the system.
+
+- The **HC-SR04 ultrasonic sensor** is connected to the Arduino for distance measurement.
+- The **SG90 servo motor** is controlled by the Arduino to rotate the sensor across the scanning area.
+- The **16×2 LCD** displays the measured distance and scanning angle in real time.
+- **LED indicators** provide visual feedback based on the detected object distance.
+- The **buzzer** generates audible alerts when an object is detected within predefined warning thresholds.
+
+The Arduino UNO acts as the central controller, processing sensor measurements and coordinating all connected output devices to perform continuous obstacle detection.
