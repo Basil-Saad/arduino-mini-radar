@@ -127,7 +127,7 @@ The Arduino UNO acts as the central controller, processing sensor measurements a
 ## Hardware Prototype
 
 <p align="center">
-  <img src="images/project.jpg" alt="Arduino Mini Radar Hardware Prototype" width="500">
+  <img src="images/project.jpg" alt="Arduino Mini Radar Hardware Prototype" width="200">
 </p>
 
 The Arduino Mini Radar system was successfully implemented and tested on real hardware. The prototype integrates an Arduino UNO, an HC-SR04 ultrasonic sensor mounted on an SG90 servo motor, a 16×2 LCD display, LED indicators, and a buzzer.
