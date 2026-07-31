@@ -77,3 +77,16 @@ arduino-mini-radar/
     ├── block-diagram.jpg     # System block diagram
     └── circuit-diagram.jpg   # Complete circuit schematic
 ```
+## Working Principle
+
+<p align="center">
+  <img src="images/working-flowchart.jpg" alt="Working Flowchart" width="700">
+</p>
+
+The system operates through the following sequence:
+
+1. The **servo motor** rotates the ultrasonic sensor across a **180° scanning range**.
+2. At each angle, the **HC-SR04 ultrasonic sensor** transmits an ultrasonic pulse and measures the echo time to calculate the distance to nearby objects.
+3. The calculated **distance** and **current scanning angle** are displayed on the **16×2 LCD**.
+4. If an object is detected within predefined distance thresholds, the corresponding **LED indicators** and **buzzer** are activated to provide visual and audible alerts.
+5. The servo continues scanning, allowing the system to perform **continuous real-time obstacle detection**.
