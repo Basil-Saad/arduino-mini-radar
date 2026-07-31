@@ -59,3 +59,21 @@ This project demonstrates the integration of sensors, actuators, embedded progra
 | **LED Indicators** | Provide visual status indication based on the detected object distance. |
 | **Breadboard & Jumper Wires** | Used for circuit prototyping and hardware connections. |
 | **USB Power Supply** | Powers the Arduino UNO during operation. |
+
+## Project Structure
+
+```text
+arduino-mini-radar/
+│
+├── README.md                 # Project documentation
+├── LICENSE                   # MIT License
+│
+├── Arduino/
+│   └── mini-radar.ino        # Arduino source code
+│
+└── images/
+    ├── project.jpg           # Hardware prototype
+    ├── working-flowchart.jpg # Project workflow
+    ├── block-diagram.jpg     # System block diagram
+    └── circuit-diagram.jpg   # Complete circuit schematic
+```
