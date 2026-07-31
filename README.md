@@ -32,9 +32,9 @@ This project presents a compact radar-like obstacle detection system built with 
 
 ## Overview
 
-The **Arduino Mini Radar** is an embedded systems project designed to detect nearby obstacles using ultrasonic sensing technology. The system combines an **Arduino UNO**, an **HC-SR04 ultrasonic sensor**, and a **servo motor** to perform continuous 180° environmental scanning.
+The **Mini Radar** is an embedded systems project that detects nearby obstacles using an **HC-SR04 ultrasonic sensor** mounted on a rotating **SG90 servo motor**. As the sensor scans a 180° field of view, measured distances are displayed on a **16×2 LCD**, while **LEDs** and a **buzzer** provide real-time obstacle alerts.
+The project demonstrates practical applications of embedded programming, sensor integration, and real-time monitoring for robotics and obstacle detection systems.
 
-As the servo motor rotates, the ultrasonic sensor measures the distance to surrounding objects at different angles. The measured distance and scanning angle are displayed on a **16×2 LCD**, while **LED indicators** and a **buzzer** provide real-time visual and audible alerts whenever an object is detected within predefined distance thresholds.
 This project demonstrates the integration of sensors, actuators, embedded programming, and real-time monitoring concepts commonly used in robotics, automation, and obstacle detection applications.
 
 ## Key Features
@@ -83,13 +83,13 @@ arduino-mini-radar/
   <img src="images/working-flowchart.jpg" alt="Working Flowchart" width="700">
 </p>
 
-The system operates through the following sequence:
+The system performs the following operations:
 
-1. The **servo motor** rotates the ultrasonic sensor across a **180° scanning range**.
-2. At each angle, the **HC-SR04 ultrasonic sensor** transmits an ultrasonic pulse and measures the echo time to calculate the distance to nearby objects.
-3. The calculated **distance** and **current scanning angle** are displayed on the **16×2 LCD**.
-4. If an object is detected within predefined distance thresholds, the corresponding **LED indicators** and **buzzer** are activated to provide visual and audible alerts.
-5. The servo continues scanning, allowing the system to perform **continuous real-time obstacle detection**.
+1. The servo motor rotates the ultrasonic sensor across a **180° scanning range**.
+2. The HC-SR04 measures the distance at each scanning angle.
+3. Distance and angle values are displayed on the LCD.
+4. LEDs and the buzzer are activated when an object is detected within predefined thresholds.
+5. The scanning cycle repeats continuously for real-time obstacle monitoring.
 
 ## Block Diagram
 
@@ -97,16 +97,7 @@ The system operates through the following sequence:
   <img src="images/block-diagram.jpg" alt="System Block Diagram" width="700">
 </p>
 
-The block diagram illustrates the overall architecture of the Arduino Mini Radar system and the interaction between its hardware components.
-
-- **Arduino UNO** serves as the central controller, coordinating all system operations.
-- **HC-SR04 Ultrasonic Sensor** measures the distance to nearby objects.
-- **SG90 Servo Motor** rotates the ultrasonic sensor to achieve a 180° scanning range.
-- **16×2 LCD Display** presents the measured distance and current scanning angle.
-- **LED Indicators** provide visual feedback based on obstacle proximity.
-- **Buzzer** generates audible alerts when objects are detected within predefined warning distances.
-
-Together, these components create a simple real-time obstacle detection system capable of continuously scanning its surroundings and notifying the user of nearby objects.
+The block diagram illustrates the interaction between the system components. The Arduino UNO receives distance measurements from the HC-SR04 ultrasonic sensor, controls the SG90 servo motor to perform 180° scanning, and updates the LCD with the current distance and scanning angle. Depending on the measured distance, the Arduino also activates the LEDs and buzzer to provide obstacle alerts.
 
 ## Circuit Diagram
 
@@ -114,15 +105,7 @@ Together, these components create a simple real-time obstacle detection system c
   <img src="images/circuit-diagram.jpg" alt="Circuit Diagram" width="700">
 </p>
 
-The circuit diagram shows the electrical connections between the Arduino UNO and all peripheral components used in the system.
-
-- The **HC-SR04 ultrasonic sensor** is connected to the Arduino for distance measurement.
-- The **SG90 servo motor** is controlled by the Arduino to rotate the sensor across the scanning area.
-- The **16×2 LCD** displays the measured distance and scanning angle in real time.
-- **LED indicators** provide visual feedback based on the detected object distance.
-- The **buzzer** generates audible alerts when an object is detected within predefined warning thresholds.
-
-The Arduino UNO acts as the central controller, processing sensor measurements and coordinating all connected output devices to perform continuous obstacle detection.
+The circuit diagram presents the wiring connections between the Arduino UNO and all peripheral components, including the HC-SR04 ultrasonic sensor, SG90 servo motor, 16×2 LCD, LEDs, and buzzer. It represents the complete hardware implementation used to build and test the Mini Radar prototype.
 
 ## Hardware Prototype
 
@@ -130,9 +113,7 @@ The Arduino UNO acts as the central controller, processing sensor measurements a
   <img src="images/project.jpg" alt="Arduino Mini Radar Hardware Prototype" width="200">
 </p>
 
-The Arduino Mini Radar system was successfully implemented and tested on real hardware. The prototype integrates an Arduino UNO, an HC-SR04 ultrasonic sensor mounted on an SG90 servo motor, a 16×2 LCD display, LED indicators, and a buzzer.
-
-The assembled hardware demonstrates continuous 180° scanning, real-time distance measurement, obstacle detection, and immediate visual and audible feedback, validating the functionality of both the hardware and the embedded software.
+The hardware prototype was successfully assembled and tested using an Arduino UNO, HC-SR04 ultrasonic sensor, SG90 servo motor, 16×2 LCD, LEDs, and a buzzer. Experimental testing confirmed reliable 180° scanning, real-time distance measurement, and immediate visual and audible obstacle indication.
 
 ## Source Code
 
@@ -143,14 +124,7 @@ Arduino/
 └── mini-radar.ino
 ```
 
-The source code is responsible for:
-
-- Initializing the ultrasonic sensor, servo motor, LCD display, LEDs, and buzzer.
-- Rotating the servo motor through a 180° scanning range.
-- Measuring object distances using the HC-SR04 ultrasonic sensor.
-- Displaying the current scanning angle and measured distance on the LCD.
-- Activating LEDs and the buzzer based on predefined distance thresholds.
-- Continuously repeating the scanning cycle to provide real-time obstacle detection.
+The Arduino source code initializes all hardware components, controls the servo scanning motion, measures object distances, updates the LCD display, and activates the LEDs and buzzer according to predefined distance thresholds.
 
 ## Technologies Used
 
