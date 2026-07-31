@@ -46,3 +46,16 @@ This project demonstrates the integration of sensors, actuators, embedded progra
 - ⚙️ **Embedded System Implementation** built on the Arduino UNO platform.
 - 🔄 **Continuous Object Monitoring** through automatic sensor sweeping and distance updates.
 - 🧩 **Modular Hardware Design** integrating sensors, actuators, and display peripherals.
+
+## Hardware Components
+
+| Component | Description |
+|-----------|-------------|
+| **Arduino UNO** | Main microcontroller responsible for processing sensor data and controlling the system. |
+| **HC-SR04 Ultrasonic Sensor** | Measures the distance to nearby obstacles using ultrasonic waves. |
+| **SG90 Servo Motor** | Rotates the ultrasonic sensor to perform 180° environmental scanning. |
+| **16×2 LCD Display** | Displays the measured distance and current scanning angle. |
+| **Buzzer** | Provides an audible alert when an obstacle is detected within the warning range. |
+| **LED Indicators** | Provide visual status indication based on the detected object distance. |
+| **Breadboard & Jumper Wires** | Used for circuit prototyping and hardware connections. |
+| **USB Power Supply** | Powers the Arduino UNO during operation. |
