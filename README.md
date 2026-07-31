@@ -1,4 +1,4 @@
-<h1 align="center">Arduino Mini Radar</h1>
+<h1 align="center">Mini Radar</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino&logoColor=white">
