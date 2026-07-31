@@ -133,3 +133,21 @@ The Arduino UNO acts as the central controller, processing sensor measurements a
 The Arduino Mini Radar system was successfully implemented and tested on real hardware. The prototype integrates an Arduino UNO, an HC-SR04 ultrasonic sensor mounted on an SG90 servo motor, a 16×2 LCD display, LED indicators, and a buzzer.
 
 The assembled hardware demonstrates continuous 180° scanning, real-time distance measurement, obstacle detection, and immediate visual and audible feedback, validating the functionality of both the hardware and the embedded software.
+
+## Source Code
+
+The complete Arduino implementation is available in:
+
+```text
+Arduino/
+└── mini-radar.ino
+```
+
+The source code is responsible for:
+
+- Initializing the ultrasonic sensor, servo motor, LCD display, LEDs, and buzzer.
+- Rotating the servo motor through a 180° scanning range.
+- Measuring object distances using the HC-SR04 ultrasonic sensor.
+- Displaying the current scanning angle and measured distance on the LCD.
+- Activating LEDs and the buzzer based on predefined distance thresholds.
+- Continuously repeating the scanning cycle to provide real-time obstacle detection.
