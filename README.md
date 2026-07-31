@@ -123,3 +123,13 @@ The circuit diagram shows the electrical connections between the Arduino UNO and
 - The **buzzer** generates audible alerts when an object is detected within predefined warning thresholds.
 
 The Arduino UNO acts as the central controller, processing sensor measurements and coordinating all connected output devices to perform continuous obstacle detection.
+
+## Hardware Prototype
+
+<p align="center">
+  <img src="images/project.jpg" alt="Arduino Mini Radar Hardware Prototype" width="500">
+</p>
+
+The Arduino Mini Radar system was successfully implemented and tested on real hardware. The prototype integrates an Arduino UNO, an HC-SR04 ultrasonic sensor mounted on an SG90 servo motor, a 16×2 LCD display, LED indicators, and a buzzer.
+
+The assembled hardware demonstrates continuous 180° scanning, real-time distance measurement, obstacle detection, and immediate visual and audible feedback, validating the functionality of both the hardware and the embedded software.
