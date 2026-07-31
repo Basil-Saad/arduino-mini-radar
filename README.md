@@ -35,5 +35,14 @@ This project presents a compact radar-like obstacle detection system built with 
 The **Arduino Mini Radar** is an embedded systems project designed to detect nearby obstacles using ultrasonic sensing technology. The system combines an **Arduino UNO**, an **HC-SR04 ultrasonic sensor**, and a **servo motor** to perform continuous 180° environmental scanning.
 
 As the servo motor rotates, the ultrasonic sensor measures the distance to surrounding objects at different angles. The measured distance and scanning angle are displayed on a **16×2 LCD**, while **LED indicators** and a **buzzer** provide real-time visual and audible alerts whenever an object is detected within predefined distance thresholds.
-
 This project demonstrates the integration of sensors, actuators, embedded programming, and real-time monitoring concepts commonly used in robotics, automation, and obstacle detection applications.
+
+## Key Features
+
+- 📡 **180° Radar Scanning** using a servo motor for continuous environmental monitoring.
+- 📏 **Real-Time Distance Measurement** with the HC-SR04 ultrasonic sensor.
+- 🖥️ **LCD Display** showing the measured distance and current scanning angle.
+- 🚨 **Obstacle Detection Alerts** using LEDs and a buzzer based on predefined distance thresholds.
+- ⚙️ **Embedded System Implementation** built on the Arduino UNO platform.
+- 🔄 **Continuous Object Monitoring** through automatic sensor sweeping and distance updates.
+- 🧩 **Modular Hardware Design** integrating sensors, actuators, and display peripherals.
