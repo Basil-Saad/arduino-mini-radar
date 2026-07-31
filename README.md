@@ -165,3 +165,9 @@ The source code is responsible for:
 | **Alert System** | LEDs, Buzzer |
 | **Embedded Programming** | Arduino Framework |
 | **Electronics** | Breadboard Prototyping |
+
+## License
+
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for more information.
