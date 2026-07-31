@@ -151,3 +151,17 @@ The source code is responsible for:
 - Displaying the current scanning angle and measured distance on the LCD.
 - Activating LEDs and the buzzer based on predefined distance thresholds.
 - Continuously repeating the scanning cycle to provide real-time obstacle detection.
+
+## Technologies Used
+
+| Category | Technologies |
+|----------|--------------|
+| **Programming Language** | C++ (Arduino) |
+| **Development Platform** | Arduino IDE |
+| **Microcontroller** | Arduino UNO |
+| **Distance Sensor** | HC-SR04 Ultrasonic Sensor |
+| **Actuator** | SG90 Servo Motor |
+| **Display** | 16×2 LCD |
+| **Alert System** | LEDs, Buzzer |
+| **Embedded Programming** | Arduino Framework |
+| **Electronics** | Breadboard Prototyping |
